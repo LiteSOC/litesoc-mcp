@@ -1,0 +1,39 @@
+{
+  "name": "@litesoc/mcp-server",
+  "version": "1.0.0",
+  "description": "Official LiteSOC MCP (Model Context Protocol) Server — gives AI editors direct access to your security alerts, events, and forensic intelligence.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "litesoc-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "litesoc": "^2.5.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "litesoc",
+    "mcp",
+    "model-context-protocol",
+    "security",
+    "soc",
+    "ai",
+    "cursor",
+    "claude"
+  ],
+  "license": "MIT"
+}
